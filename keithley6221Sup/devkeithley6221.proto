@@ -1,0 +1,29 @@
+Terminator = LF;
+
+getIDN {
+    wait 50;
+    out "\$1?";
+    in "%40c";
+    ExtraInput = Ignore;
+}
+
+getFreeMem {
+    wait 50;
+    out "TRAC:FREE?";
+    in "%i";
+    ExtraInput = Ignore;
+}
+
+cmd {
+    out "\$1";
+}
+
+setD {
+    out "\$1 %d";
+}
+
+getD {
+    out "\$1?";
+    in "%d";
+    ExtraInput = Ignore;
+}

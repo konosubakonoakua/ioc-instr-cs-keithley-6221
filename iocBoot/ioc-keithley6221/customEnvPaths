@@ -1,0 +1,4 @@
+epicsEnvSet "P" "$(P=instr:cs:k6221:1:)"
+epicsEnvSet "R" "$(R=Asyn)"
+epicsEnvSet "TTY" "$(TTY=/dev/ttyUSB0)"
+epicsEnvSet("IPPORT", "$(IPPORT=192.168.2.89:1394)")
